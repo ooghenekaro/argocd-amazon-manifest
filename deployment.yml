@@ -7,7 +7,7 @@ metadata:
   labels:
     app: amazon-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: amazon-app
@@ -23,7 +23,7 @@ spec:
     spec: # Pod spec
       containers:
       - name: amazon-container
-        image: ooghenekaro/amazon:latest
+        image: ooghenekaro/amazon:42
         ports:
         - containerPort: 3000
         
