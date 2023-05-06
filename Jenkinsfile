@@ -26,4 +26,9 @@ node {
          }
      }
   }
+    post { 
+        always { 
+            slackSend message: 'Pipeline completed - Sending report to Slack - ${currentBuild.CurrentResult} ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)'
+        }
+    }
 }
