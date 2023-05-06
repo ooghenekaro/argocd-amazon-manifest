@@ -23,7 +23,7 @@ spec:
     spec: # Pod spec
       containers:
       - name: amazon-container
-        image: ooghenekaro/amazon:50
+        image: ooghenekaro/amazon:51
         ports:
         - containerPort: 3000
         
