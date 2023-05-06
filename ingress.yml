@@ -7,10 +7,10 @@ metadata:
 spec:
 #  tls:
 #    - hosts:
-#     - cohort.rekeyole.site
+#     - test.rekeyole.site
 #     secretName: letsencrypt-nginx
   rules:
-    - host: cohort.rekeyole.site
+    - host: test.rekeyole.site
       http:
         paths:
           - path: /
