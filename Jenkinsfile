@@ -18,7 +18,7 @@ node {
                         sh "git config user.name Mexxy-lab"
                         //sh "git switch master"
                         sh "cat deployment.yml"
-                        //This command used to substitute the image name to new one that was pushed. Anything after the image tag change to new one.
+                        //This command used to substitute the image name to new one that was pushed. From latest to Jenkins build number.
                         sh "sed -i 's+${IMAGE}.*+${IMAGE}:${DOCKERTAG}+g' deployment.yml"
                         sh "cat deployment.yml"
                         sh "git add ."
