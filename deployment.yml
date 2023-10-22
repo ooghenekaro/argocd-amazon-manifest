@@ -23,7 +23,7 @@ spec:
     spec: # Pod spec
       containers:
       - name: amazon-container
-        image: pumejlab/amazon:
+        image: pumejlab/amazon:latest
         ports:
         - containerPort: 3000
         
